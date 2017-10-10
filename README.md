@@ -1,4 +1,4 @@
-![Alt text](/assets/screen-shot.png?raw=true "Optional Title")
+![Alt text](./src/assets/screen-shot.png?raw=true "Optional Title")
 
 
 # ViabillChallenge
