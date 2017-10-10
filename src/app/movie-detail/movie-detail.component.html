@@ -1,5 +1,4 @@
-<section class="movie-detail">
-  <p>
-    movie-detail works!
-  </p>
+<section class="movie-detail" *ngIf="movie">
+    <img [src]="movie.image" class="poster padded">
+    <span class="padded">{{movie.overview}}</span>
 </section>

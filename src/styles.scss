@@ -3,6 +3,9 @@
 .border{
     border: 1px solid black;
 }
+.padded{
+    padding: 21px;
+}
 @media(max-width: 525px){
     footer nav ul li h1,  header nav ul li h1 {
         visibility: hidden;

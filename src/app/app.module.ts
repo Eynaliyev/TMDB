@@ -3,6 +3,7 @@ import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 import {DataListModule} from 'primeng/primeng';
+import {InputTextModule} from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { MoviesListComponent } from './movies-list/movies-list.component';
@@ -21,7 +22,8 @@ import {MovieService} from './shared/movie.service';
     BrowserModule,
     DataListModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    InputTextModule
   ],
   providers: [
     MovieService

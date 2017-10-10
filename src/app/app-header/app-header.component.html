@@ -1,3 +1,14 @@
 <header class="header" role="banner">
-    <h1>Movie viewer</h1>
+    <div class="ui-g-8">
+        <h1>Movie viewer</h1>
+    </div>
+    <div class="ui-g-4 search-box">
+        <span class="ui-float-label">            
+            <input type="text" size="30" pInputText #searchBox id="search-box" (keyup)="search(searchBox.value)"> 
+            <label for="float-input">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                search
+            </label>
+        </span> 
+    </div>
 </header>

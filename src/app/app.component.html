@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (searchText)="search($event)"></app-header>
 <div class="ui-g">
   <div class="ui-g-4">
-    <movies-list [movies]="movies"></movies-list>    
+    <movies-list [movies]="movies" [activeMovie]="movie" (movie)="select($event)"></movies-list>    
   </div>
   <div class="ui-g-8">
-    <movie-detail></movie-detail>
+    <movie-detail [movie]="movie"></movie-detail>
   </div>
 </div>

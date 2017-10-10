@@ -1,6 +1,12 @@
 <section class="movies-list">
-  <p *ngFor="let movie of movies">
-    movies-list works!
-  </p>
+    <p-dataList [value]="movies">
+        <ng-template let-movie pTemplate="item">
+            <div *ngIf="movie && activeMovie" class="border" [class.selected]="activeMovie.id === movie.id" (click)="select(movie)">
+                <div *ngIf="movie.title" class="padded">{{movie.title}}</div>
+                <div *ngIf="movie.name" class="padded">{{movie.name}}</div>
+                <i *ngIf="activeMovie.id === movie.id" class="fa fa-arrow-right" aria-hidden="true"></i>                
+            </div>
+        </ng-template>
+    </p-dataList>    
 </section>
   
